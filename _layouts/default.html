@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} — TSR Studios</title>
+<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="{{ '/' | relative_url }}" class="logo">TSR<span>studios</span></a>
+  <nav>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/portfolio.html' | relative_url }}" {% if page.url contains 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+      <li><a href="{{ '/about.html' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/contact.html' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+{{ content }}
+
+<svg class="blob-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#B9CCF1" d="M0,32 C240,80 480,0 720,24 C960,48 1200,88 1440,40 L1440,90 L0,90 Z"></path>
+</svg>
+
+<div class="site-footer">
+  <ul class="footer-links">
+    <li><a href="{{ '/portfolio.html' | relative_url }}">Shop</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+    <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+  </ul>
+  <footer>
+    <span class="footer-script">made slowly, on purpose</span>
+    © 2026 TSR Studios. All rights reserved.
+  </footer>
+</div>
+
+</body>
+</html>
