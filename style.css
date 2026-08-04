@@ -167,6 +167,47 @@ nav a.active::after {
   flex-wrap: wrap;
 }
 
+/* ===== Hero (single image version) ===== */
+.hero-single {
+  padding: 2.5rem 6vw 4.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-single-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--periwinkle-pale), var(--periwinkle) 55%, var(--teal));
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  transform: rotate(-1deg);
+  margin-bottom: 2.75rem;
+}
+
+.hero-title {
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3em;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  max-width: 46ch;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+@media (max-width: 560px) {
+  .hero-single { padding: 1.5rem 6vw 3rem; }
+}
+
 /* ===== Buttons ===== */
 .btn {
   display: inline-block;
