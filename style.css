@@ -433,8 +433,33 @@ nav a.active::after {
 }
 
 /* ===== Footer ===== */
+.site-footer {
+  background: var(--periwinkle-pale);
+  padding: 0 0 2.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 1.75rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--teal-deep);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 footer {
-  padding: 3rem 6vw 2.5rem;
+  padding: 0 6vw 2.5rem;
   text-align: center;
   color: var(--charcoal);
   opacity: 0.7;
